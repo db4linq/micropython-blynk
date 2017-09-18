@@ -47,7 +47,7 @@ blynk.add_virtual_pin(4, write=v4_write_handler)
 blynk.add_virtual_pin(5, write=v5_write_handler)
 blynk.add_virtual_pin(6, write=v6_write_handler)
 blynk.add_virtual_pin(7, write=v7_write_handler)
-# start run thread
+# start blink process thread
 th.start_new_thread(blynk.run, ())
 time.sleep(3)
 # lcd display
